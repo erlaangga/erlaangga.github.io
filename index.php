@@ -1,4 +1,4 @@
 <?php
-echo "<b>test</b>";
+echo "<b><i>test</i> wow</b>";
 
 ?>
