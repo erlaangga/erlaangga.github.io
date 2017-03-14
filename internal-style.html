@@ -3,40 +3,216 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Learn The Past and Taste The Future</title>
-<style type="text/css">
-	body:hover,img:hover,div:hover,q:hover,ul:hover,li:hover,blockquote:hover,p:hover{
-		border:1px solid;
-	}
-	#color_rgb:hover{color:rgb(0,0,255);border:1px solid;}
-	#color_hex:hover{color:#0000FF;border:1px solid;}
-	#artikelbiru:hover{
-		background-color:powderblue;
-		color:rgb(128,90,95);
-		border: 1px solid black;
-	}
-	.judul_artikel:hover{
-		border:1px solid;
-		color: white;
-		background-color:grey;
-		text-decoration: underline;
-	}
-	a:visited{
-		color: black;
-		background-color: #FF00FF;
-	}
-	a:hover{
-		text-decoration: none;
-		border;1px solid;
-	}
-	a:active{
-		color: #FF0000;
-	}
-	a:link{}
-</style>
+	<style type="text/css">
+		body:hover,img:hover,div:hover,q:hover,ul:hover,li:hover,blockquote:hover,p:hover{
+			border:1px solid;
+		}
+		#color_rgb:hover{color:rgb(0,0,255);border:1px solid;}
+		#color_hex:hover{color:#0000FF;border:1px solid;}
+		#artikelbiru:hover{
+			background-color:powderblue;
+			color:rgb(128,90,95);
+			border: 1px solid black;
+		}
+		.judul_artikel:hover{
+			border:1px solid;
+			color: white;
+			background-color:grey;
+			text-decoration: underline;
+		}
+		a:visited{
+			color: black;
+			background-color: #FF00FF;
+		}
+		a:hover{
+			text-decoration: none;
+			border;1px solid;
+		}
+		a:active{
+			color: #FF0000;
+		}
+		a:link{}
+		lang("id_AR"  style="font-family:Sans"
+	</style>
+	<style>
+		p:hover {
+			border: 1px solid black;
+			outline-color:red;
+		}
+		p.dotted {outline-style: dotted;}
+		p.dashed {outline-style: dashed;}
+		p.solid {outline-style: solid;}
+		p.double {outline-style: double;}
+		p.groove {outline-style: groove;}
+		p.ridge {outline-style: ridge;}
+		p.inset {outline-style: inset;}
+		p.outset {outline-style: outset;}
+
+	</style>
+
+	<style type="text/css">
+		div#box {
+			background-color: lightblue;
+			width: 300px;
+			border: 25px solid lightgreen;
+			padding: 25px;
+			margin: 25px;
+		}
+
+		#teks-h1{
+			color:green;
+		}
+
+		#paragraf1{
+			color:blue;text-align:justify;
+		}
+
+		#h1-center {
+			text-align: center;
+		}
+
+		#h2-left {
+			text-align: left;
+		}
+
+		#h3-right {
+			text-align: right;
+		}
+
+		#h1-decor {
+			text-decoration: overline;
+		}
+
+		#h2-decor {
+			text-decoration: line-through;
+		}
+
+		#h3-decor {
+			text-decoration: underline;
+		}
+
+		p#uppercase {
+			text-transform: uppercase;
+		}
+
+		p#lowercase {
+			text-transform: lowercase;
+		}
+
+		p#capitalize {
+			text-transform: capitalize;
+		}
+
+		p#indent {
+			text-indent: 50px;
+		}
+
+		h1#space3 {
+			letter-spacing: 3px;
+		}
+
+		h2#space-3{
+			letter-spacing: -3px;
+		}
+		p#small_line_height {
+			line-height: 0.7;
+		}
+
+		p#big {
+			line-height: 1.8;
+		}
+		p#rtl {
+			direction: rtl;
+		}
+		h1#wordspace10 {
+			word-spacing: 10px;
+		}
+
+		h2#wordspace-5 {
+			word-spacing: -5px;
+		}
+		h1#text-shadow {
+			text-shadow: 3px 2px red;
+		}
+
+		table#teks,td{
+			border: 1px solid black;
+		}xz
+
+		#div1 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 1px solid #000000;
+}
+
+#div2 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
+}
+p#serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p#sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#px40 {
+    font-size: 40px;
+}
+
+h2#px30{
+    font-size: 30px;
+}
+
+p#px14 {
+    font-size: 14px;
+}
+h1#em2-5 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2#em1-875 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+p#em0-875 {
+    font-size: 0.875em; /* 14px/16=0.875em */
+}
+body {
+    font-size: 100%;
+}
+p#normal-weight {
+    font-weight: normal;
+}
+
+p#light {
+    font-weight: lighter;
+}
+
+p#thick {
+    font-weight: bold;
+}
+
+p#thicker {
+    font-weight: 900;
+}
+p#normal-variant {
+    font-variant: normal;
+}
+
+p#small-variant {
+    font-variant: small-caps;
+}
+	</style>
 </head>
 <body lang="id" title="Menggunakan tag body">
 	<ul title="Menggunakan tag li">
-		<li title="Menggunakan tag li"><a title="Menggunakan tag a" target="_top"href="index.html">Inline Style</a></li>
+		<li title="Menggunakan tag li"><a title="Menggunakan tag a" target="_top"href="inline-style.html">Inline Style</a></li>
 		<li title="Menggunakan tag li">Internal Style</li>
 		<li title="Menggunakan tag li"><a title="Menggunakan tag a" target="_top"href="external-style.html">External Style</a></li>
 	</ul>
@@ -131,7 +307,7 @@
 				Sumber : <a target="_top"href="https://rumaysho.com/6836-rumah-yang-seperti-kuburan.html" title="Menggunakan tag a">https://rumaysho.com/6836-rumah-yang-seperti-kuburan.html</a>
 			</p>
 		</article>
-		<article title="Menggunakan tag article" lang="id_AR" >
+		<article title="Menggunakan tag article">
 			<h2 title="Menggunakan tag h2" class="judul_artikel">Manfaat</h2>
 			<p title="Menggunakan tag p" class="isi_artikel">
 				Beri manfaat untuk orang banyak ataukah diri sendiri lebih dahulu?
@@ -240,6 +416,140 @@
 		memberi warna dengan fungsi rgb
 	</div>
 
+	<p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+	<div id="box">This text is the actual content of the box. We have added a 25px padding, 25px margin and a 25px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+	<p class="dotted">A dotted outline</p>
+	<p class="dashed">A dashed outline</p>
+	<p class="solid">A solid outline</p>
+	<p class="double">A double outline</p>
+	<p class="groove">A groove outline</p>
+	<p class="ridge">A ridge outline</p>
+	<p class="inset">An inset outline</p>
+	<p class="outset">An outset outline</p>
+	<b>Note:</b> IE8 supports the outline properties only if a !DOCTYPE is specified.
+
+	<table id="teks" title="Menggunakan tag table">
+		<tr title="Menggunakan tag tr">
+			<th>
+				Teks
+			</th>
+		</tr>
+		<tr title="Menggunakan tag tr">
+			<td>
+
+				<h1 id="teks-h1">This is heading 1</h1>
+				<p id="paragraf1">This is an ordinary paragraph. Notice that this text is blue. Sintaks color mengubah warna teks. Sementara text-align akan mengubah perataan teks.</p>
+	</td>
+		</tr>
+<tr title="Menggunakan tag tr">
+<td>
+				<h1 id="h1-center">Heading 1 (center)</h1>
+				<h2 id="h2-left">Heading 2 (left)</h2>
+				<h3 id="h3-right">Heading 3 (right)</h3>
+
+				<p>The three headings above are aligned center, left and right.</p>
+</td></tr>
+<tr title="Menggunakan tag tr">
+<td>
+				<h1 id="h1-decor">Heading 1 (Overline)</h1>
+				<h2 id="h2-decor">Heading 2 (Line Through)</h2>
+				<h3 id="h3-decor">Heading 3 (Underline)</h3>
+</td></tr>
+<tr title="Menggunakan tag tr">
+<td>
+				<p id="uppercase">This is some text. (Uppercase) </p>
+				<p id="lowercase">This is some text. (Lowercase) </p>
+				<p id="capitalize">This is some text. (Capitalize) </p>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<p id="indent">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'</p>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<h1 id="space3">This is heading 1 (letter spacing 3) </h1>
+				<h2 id="space-3">This is heading 2 (letter spacing -3) </h2>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<p>
+					This is a paragraph with a standard line-height.<br>
+					The default line height in most browsers is about 110% to 120%.<br>
+				</p>
+
+				<p id="small_line_height">
+					This is a paragraph with a smaller line-height.<br>
+					This is a paragraph with a smaller line-height.<br>
+				</p>
+
+				<p id="big">
+					This is a paragraph with a bigger line-height.<br>
+					This is a paragraph with a bigger line-height.<br>
+				</p>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<p>This is default text direction.</p>
+				<p id="rtl">This is right-to-left text direction.</p>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<h1 id="wordspace10">This is heading 1 (Word space 10)</h1>
+				<h2 id="wordspace-5">This is heading 2 (Word space -5)</h2>
+</td></tr>
+<tr title="Menggunakan tag tr"><td>
+				<h1 id="text-shadow">Text-shadow effect</h1>
+				<p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
+		</td></tr>
+		<tr>
+		Overflow disembunyikan agar konten yang melebihi luas elemen tidak terlihat.
+			<td>
+			<p>This div uses "text-overflow:clip":</p>
+				<div id="div1">This is some long text that will not fit in the box</div>
+
+<p>This div uses "text-overflow:ellipsis":</p>
+<div id="div2">This is some long text that will not fit in the box</div>
+			</td>
+		</tr>
+		<tr>
+		<th>Font Family</th>
+		<td>
+			<h1>CSS font-family</h1>
+			Using Fallback
+<p id="serif">This is a paragraph, shown in the Times New Roman font.</p>
+<p id="sansserif">This is a paragraph, shown in the Arial font.</p>
+
+		</td>
+		</tr>
+		<tr><td>
+			
+<h1 id="px40">This is heading 1</h1>
+<h2 id="px30">This is heading 2</h2>
+ukuran default = 16px
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+<h1 id="em2-5">This is heading 1</h1>
+<h2 id="em1-875">This is heading 2</h2>
+<p id="em0-875">This is a paragraph.</p>
+<p>Specifying the font-size in em allows all major browsers to resize the text.
+Unfortunately, there is still a problem with older versions of IE. When resizing the text, it becomes larger/smaller than it should. 1em = 16px (default)</p>
+		</td></tr>
+		<tr>
+			<td>
+				<p id="normal-weight">This is a paragraph. (normal)</p>
+<p id="light">This is a paragraph. (light)</p>
+<p id="thick">This is a paragraph. (thick)</p>
+<p id="thicker">This is a paragraph. (thicker)</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p class="normal-variant">My name is Hege Refsnes. (normal variant)</p>
+<p class="small-variant">My name is Hege Refsnes. (small variant)</p>
+
+			</td>
+		</tr>
+	</table>
+
+	Untuk selanjutnya silakan lihat eksternal style
 	<div align="center">
 		<a href="#top" id="to_top" title="menggunakan tag a"><img src="panahkeatas.png" width="5%" title="Menggunakan tag img"></a>
 	</div>
