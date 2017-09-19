@@ -16,7 +16,7 @@ function jam(){
 }
 
 function cekwaktu(nominal){
-	return (nominal>11?nominal:'0'+nominal)
+	return (nominal>9?nominal:'0'+nominal)
 }
 
 function tes(){
