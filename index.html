@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Learn The Past and Taste The Future</title>
-
+<link rel="stylesheet" type="text/css" href="index.css">
+<script type="text/javascript" src="index.js" ></script>
 </head>
 <body lang="id" id="top">
 	<ul id="menu">
@@ -11,16 +12,25 @@
 		<li ><a href="internal-style.html">Internal Style</a></li>
 		<li ><a href="external-style.html">External Style</a></li>
 	</ul>
+	<div id="intro">
+	<span id="tanggal">Tanggal</span>
 	<h6 id="bismillah">Bismillaahir-rahmaanir-rahiym</h6>
+	<span id="jam" onmouseover="jam()" onmouseout="this.innerHTML = 'Jam'">Jam</span>
+	</div>
 	<img id="header" src="header.jpg" alt="Header Puun Nih" width="100%">
 	<!-- Apa yang ada di dalam comment (komentar) tidak akan dieksekusi -->
 	<!-- <img src="header.jpg" alt= style="border:1px solid""Header Puun Nih" title="Header Puun" width="100%"> -->
 	<h1 >Halaman Github Untuk Belajar HTML, CSS, dan JavaScript</h1>
 	<hr >
 
+	<form>
+		<input type="text" name="name" onclick="tes()">
+		<button onclick="tes()">Cetak tes</button>
+	</form>
+
 	<div align="center" >
 		<a border="1px solid" href="#top" id="to_top" title="menggunakan tag a"><img src="panahkeatas.png" width="5%" title="Menggunakan tag img"></a>
-	</div>	
+	</div>
 </body>
 </html>
 

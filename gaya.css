@@ -1,0 +1,29 @@
+body:hover,img:hover,div:hover,q:hover,ul:hover,li:hover,blockquote:hover,p:hover
+{
+	border:1px solid;
+}
+#color_rgb:hover{color:rgb(0,0,255);border:1px solid;}
+#color_hex:hover{color:#0000FF;border:1px solid;}
+#artikelbiru:hover{
+	background-color:powderblue;
+	color:rgb(128,90,95);
+	border: 1px solid black;
+}
+.judul_artikel:hover{
+	border:1px solid;
+	color: white;
+	background-color:grey;
+	text-decoration: underline;
+}
+a:visited{
+	color: black;
+	background-color: #FF00FF;
+}
+a:hover{
+	text-decoration: none;
+	border;1px solid;
+}
+a:active{
+	color: #FF0000;
+}
+a:link{}

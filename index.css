@@ -1,0 +1,60 @@
+#menu{
+	/*
+	list-style-type: circle;
+    list-style-type: square;
+    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
+    */
+    /*default disk for ul or decimal for ol */
+    /*(if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)*/
+
+    /*default none*/
+    /*list-style-image: url('planets.gif');*/
+    /*(specifies an image as the list item marker)*/
+
+    /*Shorthand property*/
+    /*list-style: square inside url("planets.gif");*/
+
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20;
+
+    /*list-style-position: inside;*/
+    /*default outside*/
+    /*(specifies whether the list-item markers should appear inside or outside the content flow)*/
+
+    background: #35c4ea;
+}
+
+#menu li{
+	background: #fff811;
+	margin: 5px 5px 5px 5px;
+	display: inline;
+	/*display mengatur tampilan elemen berbaris ke samping atau ke bawah*/
+}
+
+a{
+	text-decoration: none;
+}
+
+#si-kotak{
+}
+
+#intro{
+	max-width: 100%;
+}
+#tanggal{
+	padding-right: 30%;
+	width: 30%;
+}
+
+#bismillah {
+	display: inline;
+	width: 30%;
+}
+
+#jam{
+	position: absolute;
+	text-align: right;
+	width: 40%;
+}
