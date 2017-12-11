@@ -26,4 +26,162 @@ a:hover{
 a:active{
 	color: #FF0000;
 }
-a:link{}
+a:linkZ{}
+
+div#box {
+			background-color: lightblue;
+			width: 300px;
+			border: 25px solid lightgreen;
+			padding: 25px;
+			margin: 25px;
+		}
+
+		#teks-h1{
+			color:green;
+		}
+
+		#paragraf1{
+			color:blue;text-align:justify;
+		}
+
+		#h1-center {
+			text-align: center;
+		}
+
+		#h2-left {
+			text-align: left;
+		}
+
+		#h3-right {
+			text-align: right;
+		}
+
+		#h1-decor {
+			text-decoration: overline;
+		}
+
+		#h2-decor {
+			text-decoration: line-through;
+		}
+
+		#h3-decor {
+			text-decoration: underline;
+		}
+
+		p#uppercase {
+			text-transform: uppercase;
+		}
+
+		p#lowercase {
+			text-transform: lowercase;
+		}
+
+		p#capitalize {
+			text-transform: capitalize;
+		}
+
+		p#indent {
+			text-indent: 50px;
+		}
+
+		h1#space3 {
+			letter-spacing: 3px;
+		}
+
+		h2#space-3{
+			letter-spacing: -3px;
+		}
+		p#small_line_height {
+			line-height: 0.7;
+		}
+
+		p#big {
+			line-height: 1.8;
+		}
+		p#rtl {
+			direction: rtl;
+		}
+		h1#wordspace10 {
+			word-spacing: 10px;
+		}
+
+		h2#wordspace-5 {
+			word-spacing: -5px;
+		}
+		h1#text-shadow {
+			text-shadow: 3px 2px red;
+		}
+
+		table#teks,td{
+			border: 1px solid black;
+		}xz
+
+		#div1 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: clip; 
+    border: 1px solid #000000;
+}
+
+#div2 {
+    white-space: nowrap; 
+    width: 12em; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 1px solid #000000;
+}
+p#serif {
+    font-family: "Times New Roman", Times, serif;
+}
+
+p#sansserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1#px40 {
+    font-size: 40px;
+}
+
+h2#px30{
+    font-size: 30px;
+}
+
+p#px14 {
+    font-size: 14px;
+}
+h1#em2-5 {
+    font-size: 2.5em; /* 40px/16=2.5em */
+}
+
+h2#em1-875 {
+    font-size: 1.875em; /* 30px/16=1.875em */
+ }
+
+p#em0-875 {
+    font-size: 0.875em; /* 14px/16=0.875em */
+}
+body {
+    font-size: 100%;
+}
+p#normal-weight {
+    font-weight: normal;
+}
+
+p#light {
+    font-weight: lighter;
+}
+
+p#thick {
+    font-weight: bold;
+}
+
+p#thicker {
+    font-weight: 900;
+}
+p#normal-variant {
+    font-variant: normal;
+}
+
+p#small-variant {
+    font-variant: small-caps;
+}

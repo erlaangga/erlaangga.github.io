@@ -2,35 +2,67 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Learn The Past and Taste The Future</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Yurina &amp; Erlangga</title>
+	<link rel="shortcut icon" type="image/x-icon" href="Y&E.svg">
 <link rel="stylesheet" type="text/css" href="index.css">
 <script type="text/javascript" src="index.js" ></script>
 </head>
 <body lang="id" id="top">
-	<ul id="menu">
-		<li ><a href="inline-style.html">Inline Style</a></li>
-		<li ><a href="internal-style.html">Internal Style</a></li>
-		<li ><a href="external-style.html">External Style</a></li>
-	</ul>
+	<header id="header">
+		<img src="header.png" width="100%">
+	</header>
+	<table id="menu">
+		<tr>
+			<td id="jadwal-acara">
+				<table align="center">
+					<tr>
+						<td>
+							<img src="jam.svg" width="50px" height="50px" >	
+						</td>
+					</tr>
+					<tr>
+						<td>Akad  &amp; Resepsi</td>
+					</tr>
+				</table>
+			</td>
+			<td id="lokasi">
+				<table align="center">
+					<tr>
+						<td>
+							<img src="lokasi.svg" width="50px" height="50px" >
+						</td>
+					</tr>
+					<tr>
+						<td>Lokasi</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 	<div id="intro">
-	<span id="tanggal">Tanggal</span>
-	<h6 id="bismillah">Bismillaahir-rahmaanir-rahiym</h6>
-	<span id="jam" onmouseover="jam()" onmouseout="this.innerHTML = 'Jam'">Jam</span>
+		<div id="tanggal">Tanggal</div>
+		<div id="bismillah">Bismillaahir-rahmaanir-rahiym</div>
+		<div id="jam" onmouseover ="this.innerHTML = 'Jam'">Jam</div>
 	</div>
-	<img id="header" src="header.jpg" alt="Header Puun Nih" width="100%">
+	<div id="content">
+
+	</div>
 	<!-- Apa yang ada di dalam comment (komentar) tidak akan dieksekusi -->
 	<!-- <img src="header.jpg" alt= style="border:1px solid""Header Puun Nih" title="Header Puun" width="100%"> -->
-	<h1 >Halaman Github Untuk Belajar HTML, CSS, dan JavaScript</h1>
 	<hr >
-
-	<form>
-		<input type="text" name="name" onclick="tes()">
-		<button onclick="tes()">Cetak tes</button>
-	</form>
-
-	<div align="center" >
-		<a border="1px solid" href="#top" id="to_top" title="menggunakan tag a"><img src="panahkeatas.png" width="5%" title="Menggunakan tag img"></a>
-	</div>
+	<script type="text/javascript">
+		var jadwal = document.getElementById("jadwal-acara");
+		var lokasi = document.getElementById("lokasi");
+		var content = document.getElementById("content");
+		var content_jadwal = '<div class="main"> <div class="container bgy-green bgy-center bgy-back" > <div> <div><img src="top.png" width="100%" style="z-index: 1;position: static;"></div> </div> <img src="label2.png" width="30%"> <div> <img src="bottom.png" width="100%"> </div> </div></div>'
+		jadwal.addEventListener('click',function (event){
+			content.innerHTML = content_jadwal;
+		});
+		lokasi.addEventListener('click',function (event){
+			content.innerHTML = '';
+		});
+	</script>
 </body>
 </html>
 

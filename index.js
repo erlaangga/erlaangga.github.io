@@ -1,22 +1,34 @@
 setTimeout("jam()", 1000);
+var target_jam = 9;
 function jam(){
 	a = document.getElementById('jam')
 	var date = new Date();
-	var tahun = date.getYear();
 	var tanggal = date.getDate();
 	var bulan = date.getMonth();
 	var hari = date.getDay();
 	var namabulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September','Oktober','November','Desember'];
 	var jam = date.getHours();
-	var menit = date.getMinutes();
-	var detik = date.getSeconds();
+	if (jam < 9) {
+		jam = target_jam - jam;
+	}
+	else {
+		
+	}
+	var menit = 59 - date.getMinutes();
+	var detik = 59 - date.getSeconds();
 	a.innerHTML = cekwaktu(jam)+':'+cekwaktu(menit)+':'+cekwaktu(detik);
-	document.getElementById('tanggal').innerHTML = tanggal + ' ' + namabulan[bulan] + ' ' + (tahun+1900);
+	if (tanggal > 13 && bulan == 11 && tahun == 117) {
+		tanggal = 31 - 13;
+	}
+	else if(tanggal == 13 && bulan == 0 && tahun == 118){
+		bulan = tanggal = 0;
+	}
+	document.getElementById('tanggal').innerHTML = cekwaktu(tanggal);
 	setTimeout("jam()", 1000);
 }
 
 function cekwaktu(nominal){
-	return (nominal>9?nominal:'0'+nominal)
+	return (nominal>9&&nominal>0?nominal:'0'+nominal)
 }
 
 function tes(){
