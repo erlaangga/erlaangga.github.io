@@ -70,7 +70,7 @@ function jam(){
 	}
 
 	if (sisa_hari < 0 || sisa_jam < 0 || sisa_menit < 0 || sisa_detik < 0) {
-
+		
 	}
 	else{
 		document.getElementById('status').innerHTML	= 'Menuju Acara';
