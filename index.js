@@ -46,9 +46,10 @@ function jam(){
 		sisa_hari--;
 	}
 	sisa_menit =  target_menit - date.getMinutes();
-	/*if(sisa_menit == 60){
+	if(sisa_menit == 60){
 		sisa_menit = 0;
-	}*/
+		sisa_jam++;
+	}
 	sisa_detik = target_detik - date.getSeconds();
 	if(sisa_detik == 60){
 		sisa_detik = 0;
