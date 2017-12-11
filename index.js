@@ -52,6 +52,7 @@ function jam(){
 	sisa_detik = target_detik - date.getSeconds();
 	if(sisa_detik == 60){
 		sisa_detik = 0;
+		sisa_menit++;
 	}
 	el_jam.innerHTML = cekwaktu(sisa_jam) + " Jam";
 	menit.innerHTML = cekwaktu(sisa_menit) + " Menit";
