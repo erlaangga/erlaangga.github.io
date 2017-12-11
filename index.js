@@ -53,9 +53,9 @@ function jam(){
 	if(sisa_detik == 60){
 		sisa_detik = 0;
 	}
-	el_jam.innerHTML = cekwaktu(sisa_jam) + "Jam";
-	menit.innerHTML = cekwaktu(sisa_menit) + "Menit";
-	detik.innerHTML = cekwaktu(sisa_detik) + "Detik";
+	el_jam.innerHTML = cekwaktu(sisa_jam) + " Jam";
+	menit.innerHTML = cekwaktu(sisa_menit) + " Menit";
+	detik.innerHTML = cekwaktu(sisa_detik) + " Detik";
 
 	if (tanggal > 13 && bulan == 11 && tahun == 117) {
 		tanggal = 31 - 13;
@@ -66,6 +66,13 @@ function jam(){
 
 	if(sisa_hari){
 		document.getElementById('hari').innerHTML = cekwaktu(sisa_hari) + " Hari";
+	}
+
+	if (sisa_hari < 0 || sisa_jam < 0 || sisa_menit < 0 || sisa_detik < 0) {
+
+	}
+	else{
+		document.getElementById('status').innerHTML	= 'Menuju Acara';
 	}
 	// karena setTimeout hanya menjalankan kode sekali
 	// setTimeout("jam()", 1000);

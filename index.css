@@ -80,13 +80,16 @@ a{
     top: 0px;
     border: 1px solid black;
     text-align: center;
+    font-size: 14pt;
     color: green;
+    font-family: arial;
+    padding: 10px;
 }
 #tanggal{
     text-align: right;
     display: inline;
     border-collapse: collapse;
-    font-size: 11pt;
+    font-size: 14pt;
     width: 400px;
     border: 1px solid black;
     height: inherit;
@@ -117,6 +120,7 @@ a{
 }
 #menit{display: inline;}
 #detik{display: inline;}
+#status {font-size: 14pt;}
 .main-container {
     position: relative;
 }
