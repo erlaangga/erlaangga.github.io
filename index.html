@@ -53,7 +53,21 @@
 		
 	</div>
 	<div id="content">
-
+		<div id="maps">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.277907819745!2d107.6858241190467!3d-6.320141309042271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e694265eb29549f%3A0x104587cf10d45df6!2sGg.+Rajawali%2C+Ciasembaru%2C+Ciasem%2C+Kabupaten+Subang%2C+Jawa+Barat+41256!5e0!3m2!1sid!2sid!4v1513296542357" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		<div id="acara">
+			<div class="main">
+			<div class="container bgy-green bgy-center bgy-back" > 
+			<div> 
+			<div> 
+			<img src="top.png" width="100%" style="z-index: 1;position: static;"> 
+			</div> 
+			</div> 
+			<img src="label2.png" width="30%"> <div> <img src="bottom.png" width="100%"> 
+			</div> 
+			</div> 
+		</div>
 	</div>
 	<!-- Apa yang ada di dalam comment (komentar) tidak akan dieksekusi -->
 	<!-- <img src="header.jpg" alt= style="border:1px solid""Header Puun Nih" title="Header Puun" width="100%"> -->
@@ -61,27 +75,19 @@
 	<script type="text/javascript">
 		var jadwal = document.getElementById("jadwal-acara");
 		var lokasi = document.getElementById("lokasi");
-		var content = document.getElementById("content");
-		var content_jadwal = '<div class="main"> \
-								<div class="container bgy-green bgy-center bgy-back" > \
-									<div> \
-										<div> \
-											<img src="top.png" width="100%" style="z-index: 1;position: static;"> \
-										</div> \
-									</div> \
-									<img src="label2.png" width="30%"> <div> <img src="bottom.png" width="100%"> \
-								</div> \
-							</div> \
-							';
+		var content_acara = document.getElementById("acara");
+		var content_lokasi = document.getElementById("maps");
 		jadwal.addEventListener('click',function (event){
-			content.innerHTML = content_jadwal;
+			content_acara.style.display = "block";
+			content_lokasi.style.display = "none";
 			jadwal.style.cursor = "default";
 			jadwal.style.background = "#009900";
 			lokasi.style.cursor = "cursor";
 			lokasi.style.background = "#008800";
 		});
 		lokasi.addEventListener('click',function (event){
-			content.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15862.277907819745!2d107.6858241190467!3d-6.320141309042271!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e694265eb29549f%3A0x104587cf10d45df6!2sGg.+Rajawali%2C+Ciasembaru%2C+Ciasem%2C+Kabupaten+Subang%2C+Jawa+Barat+41256!5e0!3m2!1sid!2sid!4v1513296542357" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>';
+			content_lokasi.style.display = "block";
+			content_acara.style.display = "none";
 			lokasi.style.cursor = "default";
 			lokasi.style.background = "#009900";
 			jadwal.style.cursor = "cursor";
