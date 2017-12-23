@@ -1,9 +1,11 @@
 body{
     margin: 0;
-    min-width: 1280px;
+    /*min-width: 1280px;*/
+    width: 100%;
     text-align: center;
     background: url("background.svg");
     background-size: 10%;
+    vertical-align:middle;
 }
 #header {
     /*background: url("header.png");*/
@@ -36,12 +38,12 @@ body{
     /*default outside*/
     /*(specifies whether the list-item markers should appear inside or outside the content flow)*/
 
-    background: #a0892c; /* For browsers that do not support gradients */
-    background: linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
-    background: -ms-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
-    background: -webkit-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
-    background: -moz-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
-    position: relative;
+    background: #008102; /* For browsers that do not support gradients */
+    background: linear-gradient(#008102, #005500); /* Standard syntax (must be last) */
+    background: -ms-linear-gradient(#008102, #005500); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#008102, #005500); /* Standard syntax (must be last) */
+    background: -moz-linear-gradient(#008102, #005500); /* Standard syntax (must be last) */
+    position: sticky;
     top: 0px;
     z-index: 1;
     padding-top: 10px;
@@ -52,11 +54,11 @@ body{
     border-bottom: 5px black solid;
 }
 #menu > tbody > tr > .active{
-    background: #a0892c;
+    background: #008102;
 }
 
 td#lokasi{
-     cursor: pointer;
+     
     }  
 td#jadwal-acara{
      cursor: pointer;
@@ -153,14 +155,14 @@ a{
 }
 #maps{
     display: none;
-    visibility: hidden;
+    visibility: visible;
 }
 /*#acara:hover{
 }*/
 #acara{
     width: 100%;
-    display: none;
-    visibility: hidden;
+    /*display: none;
+    visibility: visible;*/
     /*width: 50px;
     -webkit-transition: width 1s;
     transition: width 1s;
@@ -245,3 +247,17 @@ a{
 .bgy-border-rounded{
     border-radius: 5px;
 }
+
+@keyframes animatetop{
+    from{
+        top:-300px;opacity:0
+        }
+    to{
+        top:0;opacity:1
+    }
+}
+.w3-animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}

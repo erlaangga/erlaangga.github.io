@@ -8,13 +8,13 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 <script type="text/javascript" src="index.js" ></script>
 </head>
-<body lang="id" id="top">
+<body lang="id" id="top" class="w3-animate-opacity">
 	<header id="header">
 		<img src="header.jpg" width="100%">
 	</header>
 	<table id="menu">
 		<tr>
-			<td id="jadwal-acara">
+			<td id="jadwal-acara" class="active">
 				<table align="center">
 					<tr>
 						<td>
@@ -53,10 +53,10 @@
 		
 	</div>
 	<div id="content">
-		<div id="maps">
+		<div id="maps" class="w3-animate-opacity">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.3923315028312!2d107.68511748806434!3d-6.320160999712721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTknMTIuNiJTIDEwN8KwNDEnMDguNCJF!5e0!3m2!1sen!2sid!4v1513308692581" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-		<div id="acara" width="0">
+		<div id="acara" width="0" class="w3-animate-opacity">
 			<div class="main">
 			<div class="container bgy-green bgy-center bgy-back" > 
 			<div> 
@@ -87,6 +87,7 @@
 			jadwal.setAttribute("class","active");
 			lokasi.style.cursor = "cursor";
 			// lokasi.style.background = "#008800";
+			// setTimeout("jam()", 1000);
 			lokasi.setAttribute("class","");
 		});
 		lokasi.addEventListener('click',function (event){
