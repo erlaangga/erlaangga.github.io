@@ -83,9 +83,11 @@
 			content_lokasi.style.display = "none";
 			content_lokasi.style.visibility = "hidden";
 			jadwal.style.cursor = "default";
-			jadwal.style.background = "#009900";
+			// jadwal.style.background = "#009900";
+			jadwal.setAttribute("class","active");
 			lokasi.style.cursor = "cursor";
-			lokasi.style.background = "#008800";
+			// lokasi.style.background = "#008800";
+			lokasi.setAttribute("class","");
 		});
 		lokasi.addEventListener('click',function (event){
 			content_lokasi.style.visibility = "visible";
@@ -93,9 +95,11 @@
 			content_acara.style.display = "none";
 			content_acara.style.visibility = "hidden";
 			lokasi.style.cursor = "default";
-			lokasi.style.background = "#009900";
+			lokasi.setAttribute("class","active");
+			// lokasi.style.background = "#009900";
 			jadwal.style.cursor = "cursor";
-			jadwal.style.background = "#008800";
+			jadwal.setAttribute("class","");
+			// jadwal.style.background = "#008800";
 		});
 	</script>
 </body>

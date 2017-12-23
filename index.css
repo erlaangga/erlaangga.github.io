@@ -36,7 +36,11 @@ body{
     /*default outside*/
     /*(specifies whether the list-item markers should appear inside or outside the content flow)*/
 
-    background: #008800;
+    background: #a0892c; /* For browsers that do not support gradients */
+    background: linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
+    background: -ms-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
+    background: -moz-linear-gradient(#a0892c, #c2ab4f); /* Standard syntax (must be last) */
     position: relative;
     top: 0px;
     z-index: 1;
@@ -46,6 +50,9 @@ body{
     width: 100%;
     border-collapse: collapse;
     border-bottom: 5px black solid;
+}
+#menu > tbody > tr > .active{
+    background: #a0892c;
 }
 
 td#lokasi{
