@@ -52,6 +52,7 @@ body{
     width: 100%;
     border-collapse: collapse;
     border-bottom: 5px black solid;
+    cursor: pointer;
 }
 #menu > tbody > tr > .active{
     background: #de00c7; /* For browsers that do not support gradients */
@@ -59,13 +60,14 @@ body{
     background: -ms-linear-gradient(#de00c7, #ff22f9, #de00c7); /* Standard syntax (must be last) */
     background: -webkit-linear-gradient(#de00c7, #ff22f9, #de00c7); /* Standard syntax (must be last) */
     background: -moz-linear-gradient(#de00c7, #ff22f9, #de00c7); /* Standard syntax (must be last) */
+    cursor: default;
 }
 
 td#lokasi{
      
     }  
 td#jadwal-acara{
-     cursor: pointer;
+     
     }
 #menu td{
     
