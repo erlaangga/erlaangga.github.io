@@ -1,8 +1,7 @@
 body{
     margin: 0;
-    /*min-width: 1280px;*/
+    min-width: 640px;
     width: 100%;
-    text-align: center;
     background: url("background.svg");
     background-size: 10%;
     vertical-align:middle;
@@ -252,6 +251,12 @@ a{
 }
 .bgy-border-rounded{
     border-radius: 5px;
+}
+.bgy-text-white{
+    color: white;
+}
+.bgy-text-bold{
+    font-weight: bold;
 }
 
 @keyframes animatetop{
