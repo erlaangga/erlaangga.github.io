@@ -55,8 +55,12 @@ function jam(){
 		sisa_detik = 0;
 		sisa_menit++;
 	}
-	el_jam.innerHTML = cekwaktu(sisa_jam) + " Jam";
-	menit.innerHTML = cekwaktu(sisa_menit) + " Menit";
+	if (sisa_jam > 0) {
+		el_jam.innerHTML = cekwaktu(sisa_jam) + " Jam";
+	}
+	if (sisa_menit > 0) {
+		menit.innerHTML = cekwaktu(sisa_menit) + " Menit";
+	}
 	detik.innerHTML = cekwaktu(sisa_detik) + " Detik";
 
 	if (tanggal > 13 && bulan == 11 && tahun == 117) {
