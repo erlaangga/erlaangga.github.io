@@ -36,7 +36,7 @@ function jam(){
 		sisa_hari = 31 - tanggal + target_tanggal;
 	}
 	else if (bulan == 0) {
-		sisa_hari = target_tanggal - hari;
+		sisa_hari = target_tanggal - tanggal;
 	}
 	if (jam <= target_jam) {
 		sisa_jam = target_jam - jam;
