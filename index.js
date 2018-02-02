@@ -69,7 +69,7 @@ function jam(){
 		detik.innerHTML = cekwaktu(sisa_detik) + " Detik";
 
 		if (tanggal > target_tanggal && bulan == 0 && tahun == 118) {
-			tanggal = 31 - 13;
+			tanggal = 31 - target_tanggal;
 		}
 		else if(tanggal == target_tanggal && bulan == target_bulan && tahun == 118){
 			bulan = tanggal = 0;
