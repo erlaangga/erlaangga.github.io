@@ -1,10 +1,10 @@
 // setTimeout("jam()", 1000);
 setInterval("jam()", 1000);
 var target_jam = 8;
-var target_menit = 59;
+var target_menit = 29;
 var target_detik = 60;
-var target_tanggal = 13;
-var target_bulan = 0;
+var target_tanggal = 10;
+var target_bulan = 1;
 var target_tahun = 2018;
 var tanggal;
 var bulan;
@@ -32,10 +32,10 @@ function jam(){
 
 	var namabulan = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September','Oktober','November','Desember'];
 	var jam = date.getHours();
-	if(bulan == 11){
+	if(bulan == 0){
 		sisa_hari = 31 - tanggal + target_tanggal;
 	}
-	else if (bulan == 0) {
+	else if (bulan == 1) {
 		sisa_hari = target_tanggal - tanggal;
 	}
 	if (jam <= target_jam) {
@@ -68,10 +68,10 @@ function jam(){
 		}
 		detik.innerHTML = cekwaktu(sisa_detik) + " Detik";
 
-		if (tanggal > 13 && bulan == 11 && tahun == 117) {
-			tanggal = 31 - 13;
+		if (tanggal > target_tanggal && bulan == 0 && tahun == 118) {
+			tanggal = 31 - target_tanggal;
 		}
-		else if(tanggal == 13 && bulan == 0 && tahun == 118){
+		else if(tanggal == target_tanggal && bulan == target_bulan && tahun == 118){
 			bulan = tanggal = 0;
 		}
 

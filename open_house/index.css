@@ -2,8 +2,9 @@ body{
     margin: 0;
     min-width: 640px;
     width: 100%;
+    max-width: 100%;
     background: url("background.svg");
-    background-size: 10%;
+    background-size: 100%;
     vertical-align:middle;
 }
 #header {
@@ -37,7 +38,7 @@ body{
     /*default outside*/
     /*(specifies whether the list-item markers should appear inside or outside the content flow)*/
 
-    background: #d40000; /* For browsers that do not support gradients */
+    background: #003300; /* For browsers that do not support gradients */
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -50,11 +51,11 @@ body{
     cursor: pointer;
 }
 #menu > tbody > tr > .active{
-    background: #ff00ff; /* For browsers that do not support gradients */
-    background: linear-gradient(#d40000, #d20000, #ff5555); /* Standard syntax (must be last) */
-    background: -ms-linear-gradient(#d40000, #d20000, #ff5555); /* Standard syntax (must be last) */
-    background: -webkit-linear-gradient(#d40000, #d20000, #ff5555); /* Standard syntax (must be last) */
-    background: -moz-linear-gradient(#d40000, #d20000, #ff5555); /* Standard syntax (must be last) */
+    background: #113311; /* For browsers that do not support gradients */
+    background: linear-gradient(#003300, #229933); /* Standard syntax (must be last) */
+    background: -ms-linear-gradient(#003300, #229933); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#003300, #229933); /* Standard syntax (must be last) */
+    background: -moz-linear-gradient(#003300, #229933); /* Standard syntax (must be last) */
     cursor: default;
 }
 
@@ -67,7 +68,7 @@ td#jadwal-acara{
 #menu td{
     
     font-weight: bold;
-    width: 50%;
+    width: 33%;
     color: white;
     /*display mengatur tampilan elemen berbaris ke samping atau ke bawah*/
     font-family: arial;
@@ -156,7 +157,9 @@ a{
 }
 #maps{
     display: none;
-    visibility: visible;
+}
+#content-kegiatan{
+    display: none;
 }
 /*#acara:hover{
 }*/
@@ -169,6 +172,12 @@ a{
     transition: width 1s;
     -webkit-transition-timing-function: ease;
     transition-timing-function: ease;*/
+}
+
+.bgy-shadow-box{
+    box-shadow: 5px 1px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .bgy-table{
@@ -231,8 +240,8 @@ a{
     color: white;
 }
 .bgy-back{
-    background: url("background.svg");
-    background-size: 10%;
+    /*background: url("background.svg");
+    background-size: 10%;*/
     color: white;
 }
 .bgy-border-white{
