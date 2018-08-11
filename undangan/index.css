@@ -1,0 +1,270 @@
+body{
+    margin: 0;
+    min-width: 640px;
+    width: 100%;
+    background: url("background.svg");
+    background-size: 10%;
+    vertical-align:middle;
+}
+#header {
+    /*background: url("header.png");*/
+    /*width: 100%;
+    min-width: 100%;
+    height: 100%;
+    min-height: 100%;*/
+}
+#menu{
+	/*
+	list-style-type: circle;
+    list-style-type: square;
+    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
+    */
+    /*default disk for ul or decimal for ol */
+    /*(if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)*/
+
+    /*default none*/
+    /*list-style-image: url('planets.gif');*/
+    /*(specifies an image as the list item marker)*/
+
+    /*Shorthand property*/
+    /*list-style: square inside url("planets.gif");*/
+
+    list-style-type: none;
+    margin: 0;
+
+    /*list-style-position: inside;*/
+    /*default outside*/
+    /*(specifies whether the list-item markers should appear inside or outside the content flow)*/
+
+    background: #ff00cc; /* For browsers that do not support gradients */
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 5px black solid;
+    cursor: pointer;
+}
+#menu > tbody > tr > .active{
+    background: #ff00ff; /* For browsers that do not support gradients */
+    background: linear-gradient(#ff00cc, #ff00dd, #ff00ff); /* Standard syntax (must be last) */
+    background: -ms-linear-gradient(#ff00cc, #ff00dd, #ff00ff); /* Standard syntax (must be last) */
+    background: -webkit-linear-gradient(#ff00cc, #ff00dd, #ff00ff); /* Standard syntax (must be last) */
+    background: -moz-linear-gradient(#ff00cc, #ff00dd, #ff00ff); /* Standard syntax (must be last) */
+    cursor: default;
+}
+
+td#lokasi{
+     
+    }  
+td#jadwal-acara{
+     
+    }
+#menu td{
+    
+    font-weight: bold;
+    width: 50%;
+    color: white;
+    /*display mengatur tampilan elemen berbaris ke samping atau ke bawah*/
+    font-family: arial;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+#si-kotak{
+}
+
+#intro{
+    /*width: 90%;*/
+    /* content overflow */
+    
+    background-color: #fff;
+    position: relative;
+    top: 0px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 14pt;
+    color: green;
+    font-family: arial;
+    font-weight: bold;
+    padding: 10px;
+}
+#tanggal{
+    text-align: right;
+    display: inline;
+    border-collapse: collapse;
+    font-size: 14pt;
+    width: 400px;
+    border: 1px solid black;
+    height: inherit;
+}
+
+#bismillah {
+    width: 400px;
+    font-size: 12pt;
+    display: inline;
+    border: 1px solid black;
+}
+
+#jam{
+    width: 400px;
+    
+    /*position: absolute;*/
+    /* makes the element position is fixed inside the element */
+    /*position: static;*/
+    /*HTML elements are positioned static by default. Static positioned elements are not affected by the top, bottom, left, and right properties. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:*/
+    /*position: relative;*/
+    /*position: sticky;*/
+    /*position: fixed; */
+    /* makes the element floating (fixed by screen) */
+
+    display: inline;
+    text-align: right;
+    font-size: 14pt;
+}
+#menit{display: inline;}
+#detik{display: inline;}
+#status {font-size: 14pt;}
+.main-container {
+    position: relative;
+}
+
+.sub-container{
+    position: sticky;
+    top: 0px;
+}
+
+.wide {
+    width: 100%;
+    height: 80%;
+    overflow: all;
+    border: 1px solid black;
+}
+
+.wide img{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 50%;
+    min-height: 50%;
+}
+#maps{
+    display: none;
+    visibility: visible;
+}
+/*#acara:hover{
+}*/
+#acara{
+    width: 100%;
+    /*display: none;
+    visibility: visible;*/
+    /*width: 50px;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;*/
+}
+
+.bgy-table{
+    width: 100%;
+}
+.bgy-table, .bgy-table tr, .bgy-table tr th, .bgy-table tr td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.bgy-table td{
+    padding-right: 10px; 
+    padding-left: 10px;
+}
+.text-center{
+    text-align: center;
+}
+.bgy-center{
+    text-align: center;
+    
+    top: 30%;
+    left: 0;
+    width: 100%;
+}
+.title-login{
+    font-size:10pt;
+    text-align:center;
+}
+.title-login:hover{
+    font-size:14pt;
+}
+.field-data {
+    border-right: 1px solid grey;
+}
+.bgy-stripped tr:nth-child(even){
+    background-color: #009900;
+    color:white;
+}
+.bgy-stripped tr:nth-child(odd){
+    background-color: #00aa00;
+    color:white;
+}
+.bgy-hover tr:hover{
+    background-color: white;
+    color:black;
+}
+.bgy-hover-yellow tr:hover{
+    background-color: yellow;
+    color:black;
+}
+.bgy-hover-blue tr:hover{
+    background-color: #1199ff;
+    color:white;
+}
+.bgy-white{
+    background: #fff;
+    color: black;
+}
+.bgy-green{
+    background: #33aa33;
+    color: white;
+}
+.bgy-back{
+    background: url("background.svg");
+    background-size: 10%;
+    color: white;
+}
+.bgy-border-white{
+    border-color: #fff;
+}
+.bgy-border-black{
+    border-color: #000;
+}
+.bgy-border-green{
+    border: 1px solid;
+    border-color: #009400;
+}
+.bgy-border-rounded{
+    border-radius: 5px;
+}
+.bgy-text-white{
+    color: white;
+}
+.bgy-text-bold{
+    font-weight: bold;
+}
+
+@keyframes animatetop{
+    from{
+        top:-300px;opacity:0
+        }
+    to{
+        top:0;opacity:1
+    }
+}
+.w3-animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+.w3-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
