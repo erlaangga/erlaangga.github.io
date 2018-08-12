@@ -1,0 +1,435 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0, mkdocs-material-3.0.3">
+    
+    
+      
+        <title>Arsitektur - Odoo Technical - Erlangga</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="../#architecture" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Odoo Technical - Erlangga" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Odoo Technical - Erlangga
+              </span>
+              <span class="md-header-nav__topic">
+                Arsitektur
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Odoo Technical - Erlangga" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Odoo Technical - Erlangga
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Pengenalan" class="md-nav__link">
+      Pengenalan
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Arsitektur
+      </label>
+    
+    <a href="./" title="Arsitektur" class="md-nav__link md-nav__link--active">
+      Arsitektur
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teknologi" title="Teknologi" class="md-nav__link">
+    Teknologi
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../development/" title="Development" class="md-nav__link">
+      Development
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#teknologi" title="Teknologi" class="md-nav__link">
+    Teknologi
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="architecture">Architecture</h1>
+<p><img alt="Three-tier" src="../img/three-tier-architecture.png" /></p>
+<ul>
+<li>
+<p>Client layer</p>
+<p>Client layer adalah layer yang diakses pada sisi user, bisa dikatakan sebagai presentation layer. Layer ini adalah layer antarmuka (user interface) kepada user.</p>
+</li>
+<li>
+<p>Business layer</p>
+<p>Business layer adalah layer yang berguna sebagai penengah antara data layer dan client layer. Layer ini disebut juga intermediary layer. Layer ini menjalankan business logic yang dideklarasikan seperti validasi data, perhitungan, dan memasukkan data ke database.</p>
+</li>
+<li>
+<p>Data layer</p>
+<p>Data layer atau disebut juga Data access layer digunakan untuk menyimpan data.</p>
+</li>
+</ul>
+<p><img alt="Odoo Architecture" src="../img/architecture.png" /></p>
+<h2 id="teknologi">Teknologi</h2>
+<p>Secara teknikal berikut adalah teknologi yang digunakan pada Odoo.</p>
+<ul>
+<li>
+<p>Python</p>
+<p>Python adalah sebuah bahasa pemrograman yang bersifat terbuka. Odoo menggunakan bahasa pemrograman Python sebagai business logic dan business object pada aplikasinya. Selain itu secara khusus file Python juga digunakan sebagai manifest untuk mengetahui informasi modul. Untuk Odoo dibawah versi 11 menggunakan Python versi 2.7, sedangkan versi 11 dan yang terbaru menggunakan Python versi 3. Sebuah kebiasaan yang baik apabila di baris pertama file python yang kita buat dimulai dengan berikut:</p>
+<p><code># -*- coding: utf-8 -*-</code></p>
+<p>Gunanya adalah menandakan skrip pada file menggunakan unicode UTF-8, sehingga menghindari error ketika menggunakan karakter yang tidak ada pada ANSI.
+* PostgreSQL</p>
+<p>Odoo menggunakan PostgreSQL sebagai database untuk datanya. Versi yang digunakan adalah versi 9.6. Pada Odoo, developer tidak membuat, menginisialisasi database untuk digunakan Odoo, akan tetapi menggunakan platform Odoo untuk membuat database dan Odoo akan otomatis membuat tabel yang akan digunakan. Begitu juga melakukan pembuatan field atau mengubah field dilakukan melalui file Python. Membuat database Odoo dapat dilakukan langsung dengan cara membuka Odoo dan klik tombol Create Database pada database manager. Secara otomatis modul yang ada pada addons path (folder untuk menyimpan modul) dapat dilihat di menu Apps. Erlangga Indra Permana erlaangga.github.ioTraining Odoo Technical Secara konvensi, email dan password Odoo secara default untuk development adalah admin yang sekaligus akan menjadi superuser pada user Odoo. Language diisi dengan English sebagai default. Country diisi sesuai negara kita tinggal. Ketika “Load demonstration data” dicentang maka akan memuat data demo pada modul sebagai data dummy untuk mengetes fungsional modul.</p>
+</li>
+<li>
+<p>Markup Language (XML)</p>
+<p>Bahasa markup atau Markup languange digunakan sebagai penanda pada suatu data, yang paling umum kita temui adalah HTML saat kita berselancar pada dunia maya. Apa yang kita lihat di browser saat kita berselancar sebenarnya adalah data pada markup yang di-parsing pada browser sehingga menghasilkan sebuah tampilan. Bahasa markup juga biasanya memiliki struktur hierarki seperti pohon, yang artinya sebuah tag harus mempunyai struktur yang berurutan. Tidak jauh berbeda pada browser yang mengubah HTML menjadi sebuah tampilan, pada Odoo ekstensi file berupa XML digunakan untuk mendeklarasikan data yang berisi menu, action, tampilan, atau pun data untuk suatu model. Data berupa menu, action, dan tampilan akan diubah menjadi menu dan tampilan yang akan menjadi tempat bagi data-data untuk ditampilkan.</p>
+<hr />
+<pre><code>&lt;odoo&gt;                                                          &lt;!-- pembuka --&gt;
+    &lt;data&gt;                                                      &lt;!-- pembuka --&gt;
+        &lt;record model="{nama model}" id="{record identifier}"&gt;  &lt;!-- deklarasi record --&gt;
+            &lt;field name="{nama field}"&gt;{nilai}&lt;/field&gt;          &lt;!-- nilai field-nya --&gt;
+        &lt;/record&gt;
+    &lt;/data&gt;
+&lt;/odoo&gt;
+</code></pre>
+<hr />
+<p>Di atas adalah contoh dari struktur isi file xml untuk Odoo. Sebuah bahasa markup mempunyai elemen (tag) dan di dalam tag dapat berisi atribut. Seperti contoh tag record mempunyai atribut model dan id, sedangkan tag <code>&lt;field&gt;</code> memiliki atribut name. Sebuah id pada record dalam satu modul tidak boleh sama. Hal ini akan berpengaruh saat external identifier (id ekternal) suatu modul diacu. Format id ekternal adalah nama_modul.id_record. Ketika sebuah modul di-upgrade, data pada XML dimuat ulang yang membuat data akan berubah. Kita dapat mencegah hal tersebut dengan menambahkan atribut noupdate yang bernilai True pada elemen data menjadi seperti berikut:</p>
+<p><code>&lt;data noupdate=”1”&gt;</code></p>
+</li>
+<li>
+<p>CSV</p>
+<p>CSV adalah File CSV pada Odoo mirip kegunaan XML untuk memasukkan data. Sedikit berbeda pada CSV jika pada XML kita dapat memasukkan data ke dalam model dengan mengisi nilai atribut model pada tag record, pada CSV kita hanya dapat menyimpan data untuk satu model untuk satu file CSV. Contohnya ketika ingin menyimpan data dengan file csv pada model <code>ir.model.access</code> maka kita harus membuat file <code>ir.model.access.csv</code> dan berisi kolom (field) serta nilai dari setiap barisnya untuk field tersebut.</p>
+</li>
+<li>
+<p>Framework</p>
+<p>Framework secara bahasa berarti kerangka kerja. Secara istilah pemrograman framework adalah suatu kumpulan library atau paket program yang mempunyai fungsi-fungsi dan aturan-aturan yang berguna untuk mempercepat pembuatan suatu program aplikasi. Framework dalam dunia nyata mirip seperti cetakan kue. Ketika kita ingin membuat kue dengan bentuk bintang maka adonan akan mengikuti cetakan tersebut. Namun kita pun dapat menambahkan hiasan pada kue kita sesuai selera, seperti tambahan kacang, coklat, karamel, dan lain-lain. Tatkala kita sudah mulai melakukan pemrograman dengan framework maka kita pun harus mengikuti aturan atau tata cara yang diatur dari sebuah framework. Begitu juga Odoo, ketika kita menggunakan framework Odoo kita pun harus berpikir untuk menyesuaikan diri dengan aturan-aturan pada Odoo yang sudah dibuat. Jika kita mengetahui framework berjenis MVC (Model, View, Controller), tugas Python disini adalah berkomunikasi dengan database sebagai jembatan dan controller dari interaksi di antarmuka, sedangkan XML berguna sebagai view yang akan dibuat dari data di XML menjadi sebuah tampilan HTML yang menempatkan data data. Inilah maksud dari MVC:</p>
+<p><img alt="MVC" src="../img/mvc.png" /></p>
+<ul>
+<li>Model, mendefinisikan struktur data</li>
+<li>View, mendefinisikan tampilan</li>
+<li>Controller, mengatur business logic dari aplikasi</li>
+</ul>
+<p>Menggunakan framework Odoo kurang lebih hanya mengikuti template yang sudah dibuat Odoo.</p>
+</li>
+</ul>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Pengenalan" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Pengenalan
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../development/" title="Development" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Development
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.583bbe55.js"></script>
+      
+      <script>app.initialize({version:"1.0",url:{base:".."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
