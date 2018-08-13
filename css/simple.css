@@ -1,0 +1,201 @@
+
+
+.text-blue {
+	color: #000033;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-red {
+	color: #DF3111;
+}
+
+.text-green {
+	color: #127F12;
+}
+
+.text-black {
+	color: black;
+}
+
+.text-grey {
+	color: grey;
+}
+
+a.text-blue:hover {
+	font-weight: bold;
+	color: #FFF;
+}
+
+a.text-white:hover {
+	font-weight: bold;
+	color: black;
+}
+
+a.text-red:hover {
+	font-weight: bold;
+	color: #FFF1;
+}
+
+a.text-green:hover {
+	font-weight: bold;
+	color: #FFF;
+}
+
+a.text-black:hover {
+	font-weight: bold;
+	color: white;
+}
+
+a.text-grey:hover {
+	font-weight: bold;
+	color: white;
+}
+
+
+.blue {
+	background-color: #000033;
+}
+
+.white {
+	background-color: white;
+}
+
+.red {
+	background-color: #DF3111;
+}
+
+.green {
+	background-color: #127F12;
+}
+
+.black {
+	background-color: black;
+}
+
+.grey {
+	background-color: grey;
+}
+
+div{
+	display: block;
+	padding: 10px;
+	margin: 10px;
+}
+
+.background{
+	background-image: url("../img/background.jpg");
+	background-size: 100%;
+	background-color: grey;
+	width: 100%;
+}
+
+.menu ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.center{
+	float: center;
+	text-align: center;
+	position: center;
+}
+
+.left{
+	float: left;
+	text-align: left;
+	position: left;
+}
+
+.right{
+	float: right;
+	text-align: right;
+	position: right;
+}
+
+@media screen and (min-width: 720px) {
+	* {
+		/*box-sizing: border-box;*/
+		box-sizing: border-box;
+	}
+
+	[class*="col-"] {
+	    float: left;
+	    padding: 15px;
+	}
+
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+
+	.menu {
+		margin: 10px;
+		padding: 10px;
+		display: block;
+		float: none;
+	}
+
+	.menu ul li{
+		display: inline-block;
+		padding: 20px;
+		border: 2px solid;
+		border-bottom-right-radius: 2px;
+	}
+	
+	.menu ul li a{
+		text-decoration: none;
+	}
+}
+
+@keyframes animatetop{
+    from{
+        top:-10px;opacity:0
+        }
+    to{
+        top:0;opacity:1
+    }
+}
+
+.animate-top{
+    position:relative;
+    animation:animatetop 0.4s
+}
+
+@keyframes animateopacity{
+    from{
+        opacity:0
+        }
+    to{
+		opacity:100;
+    }
+}
+
+.animate-opacity{
+	opacity: 0.7;
+    animation:opacity 0.2s;
+}
+
+.animate-opacity:hover{
+	opacity: 1;
+}
