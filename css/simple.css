@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body, html {
 	height: 100%;
 	margin: 0px;
@@ -217,6 +221,11 @@ a {
 	background-color: #000033;
 }
 
+/*text style*/
+.text-bold {
+	font-weight: bold;
+}
+
 .text-blue {
 	color: #000033;
 }
@@ -241,33 +250,27 @@ a {
 	color: grey;
 }
 
-a.text-blue:hover {
-	font-weight: bold;
+a.text-blue:hover {	
 	color: #FFF;
 }
 
 a.text-white:hover {
-	font-weight: bold;
 	color: black;
 }
 
 a.text-red:hover {
-	font-weight: bold;
 	color: #FFF1;
 }
 
 a.text-green:hover {
-	font-weight: bold;
 	color: #FFF;
 }
 
 a.text-black:hover {
-	font-weight: bold;
 	color: white;
 }
 
 a.text-grey:hover {
-	font-weight: bold;
 	color: white;
 }
 
@@ -355,11 +358,6 @@ div{
 }
 
 @media screen and (min-width: 720px) {
-	* {
-		/*box-sizing: border-box;*/
-		box-sizing: border-box;
-	}
-
 	[class*="col-"] {
 	    float: left;
 	    padding: 15px;
