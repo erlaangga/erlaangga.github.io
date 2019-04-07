@@ -1,22 +1,24 @@
+/*
+developed by Erlaanga Indra Permana <erlangga.ip@gmail.com>
+*/
+
 * {
 	box-sizing: border-box;
+	transition: 0.3s;
 }
 
 body, html {
 	height: 100%;
-	margin: 0px;
-	padding: 0px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 	text-decoration: none;
 	font-family: arial;
 }
 
-body {
-	position: absolute !important;
-}
-
 @keyframes slidetop {
 	from {
-		top: -300px;
+		top: -30px;
 		opacity: 0
 	}
 	to {
@@ -45,6 +47,38 @@ to {
 	animation: slidebottom 0.5s;
 }
 
+@keyframes slideleft {
+	from {left: -30px;
+	opacity: 0
+}
+
+to {
+	left: 0;
+	opacity: 1
+}
+
+}
+.sliding-left {
+	position: relative;
+	animation: slideleft 0.5s;
+}
+
+@keyframes slideright {
+	from {right: -30px;
+	opacity: 0
+}
+
+to {
+	left: 0;
+	opacity: 1
+}
+
+}
+.sliding-right {
+	position: relative;
+	animation: slideright 0.5s;
+}
+
 @keyframes fading {
 	from {opacity: 0
 }
@@ -55,25 +89,21 @@ to {
 
 }
 .fading {
-	position: relative;
 	animation: fading 0.4s;
 }
 
 /*position*/
 .bottom-left {
-	position: absolute;
 	bottom: 0;
 	left: 0;
 }
 
 .bottom-right {
-	position: absolute;
 	bottom: 0;
 	right: 0;
 }
 
 .bottom-center {
-	position: absolute;
 	bottom: 0;
 	left: 0;
 }
@@ -138,16 +168,8 @@ a {
 	text-decoration: line-through;
 }
 
-.text-jumbo {
+.jumbo {
 	font-size: 64px;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.text-left {
-	text-align: left;
 }
 
 /*size*/
@@ -161,10 +183,17 @@ a {
 }
 
 .half-width {
+	max-width: 50%;
 	width: 50%;
 }
 
+.third-width {
+	max-width: 75%;
+	width: 75%;
+}
+
 .full-width {
+	max-width: 100%;
 	width: 100%;
 }
 
@@ -190,6 +219,10 @@ a {
 
 .inline {
 	display: inline;
+}
+
+.inline-grid {
+	display: inline-grid;
 }
 
 /*element style*/
@@ -222,55 +255,55 @@ a {
 }
 
 /*text style*/
-.text-bold {
+.bold {
 	font-weight: bold;
 }
 
-.text-blue {
+.blue {
 	color: #000033;
 }
 
-.text-white {
+.white {
 	color: white;
 }
 
-.text-red {
+.red {
 	color: #DF3111;
 }
 
-.text-green {
+.green {
 	color: #127F12;
 }
 
-.text-black {
+.black {
 	color: black;
 }
 
-.text-grey {
+.grey {
 	color: grey;
 }
 
-a.text-blue:hover {	
+a.blue:hover {	
 	color: #FFF;
 }
 
-a.text-white:hover {
+a.white:hover {
 	color: black;
 }
 
-a.text-red:hover {
+a.red:hover {
 	color: #FFF1;
 }
 
-a.text-green:hover {
+a.green:hover {
 	color: #FFF;
 }
 
-a.text-black:hover {
+a.black:hover {
 	color: white;
 }
 
-a.text-grey:hover {
+a.grey:hover {
 	color: white;
 }
 
@@ -333,6 +366,13 @@ div{
 	width: 100%;
 }
 
+.menu {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 .menu ul {
 	list-style-type: none;
 	margin: 0;
@@ -340,21 +380,37 @@ div{
 }
 
 .center {
-	float: center;
+	padding: 0;
+	margin: 0;
 	text-align: center;
-	position: center;
 }
 
 .left {
-	float: left;
+	padding: 0;
+	margin: 0;
 	text-align: left;
-	position: left;
 }
 
 .right {
-	float: right;
+	padding: 0;
+	margin: 0;
 	text-align: right;
-	position: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.fix-position {
+	position: fixed;
+}
+
+.toggler-menu {
+	display: none;
 }
 
 @media screen and (min-width: 720px) {
@@ -377,20 +433,73 @@ div{
 	.col-12 {width: 100%;}
 
 	.menu {
-		margin: 10px;
 		padding: 10px;
 		display: block;
-		float: none;
 	}
 
 	.menu ul li {
 		display: inline-block;
-		padding: 20px;
+		border-bottom-right-radius: 10px;
 		border: 2px solid;
-		border-bottom-right-radius: 2px;
+	}
+
+	.menu ul li:hover {
+		border-color: white;
 	}
 	
 	.menu ul li a {
+		padding: 20px;
 		text-decoration: none;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	#footer {
+		position: relative !important;
+	}
+
+	.toggler-menu {
+		display: inline-table;
+		cursor: pointer;
+		padding: 10px;
+		margin: 0px;
+		background-color: rgb(25,25,25);
+	}
+
+	.toggler-menu div {
+		height: 1px; 
+		width: 25px; 
+		margin: 5px; 
+		padding: 0; 
+		background-color: rgb(255,255,255);
+	}
+
+	.menu {
+		text-align: center;
+		display: none;
+		transition: 0.5s;
+	}
+
+	.menu ul li {
+		position: relative;
+		border: 1px solid grey;
+		background-color: black;
+		opacity: 0.7;
+	}
+
+	.menu ul li:hover {
+		background-color: grey;
+	}
+
+	.menu ul li a{
+		font-size: 10pt;
+		margin: 0;
+		color: white;
+		box-sizing: border-box;
+	}
+
+	.active {
+		display: block;
 	}
 }
