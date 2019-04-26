@@ -5,15 +5,21 @@ developed by Erlaanga Indra Permana <erlangga.ip@gmail.com>
 * {
 	box-sizing: border-box;
 	transition: 0.3s;
+	/*developer mode*/
+	/*border: 1px solid red; */
 }
 
 body, html {
-	height: 100%;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
 	font-family: arial;
+}
+
+body {
+	height: 100%;
+	scroll-behavior: smooth;
 }
 
 @keyframes slidetop {
@@ -134,24 +140,6 @@ to {
 }
 
 /*font style*/
-.color-white {
-	color: white;
-	text-rendering: optimizeSpeed;
-}
-
-a.color-white:hover {
-	color: black;
-}
-
-.color-red {
-	color: red;
-	text-rendering: optimizeSpeed;
-}
-
-a.color-red:hover {
-	color: black;
-}
-
 a {
 	text-decoration: none;
 }
@@ -225,6 +213,10 @@ a {
 	display: inline-grid;
 }
 
+.inline-block {
+	display: inline-grid;
+}
+
 /*element style*/
 .background-white {
 	background-color: white;
@@ -283,28 +275,34 @@ a {
 	color: grey;
 }
 
-a.blue:hover {	
-	color: #FFF;
+.hover-blue:hover {	
+	color: blue;
+	background-color: blue;
 }
 
-a.white:hover {
+.hover-white:hover {
+	color: white;
+	background-color: white;
+}
+
+.hover-red:hover {
+	color: red;
+	background-color: red;
+}
+
+.hover-green:hover {
+	color: green;
+	background-color: green;
+}
+
+.hover-black:hover {
 	color: black;
+	background-color: black;
 }
 
-a.red:hover {
-	color: #FFF1;
-}
-
-a.green:hover {
-	color: #FFF;
-}
-
-a.black:hover {
+.hover-grey:hover {
 	color: white;
-}
-
-a.grey:hover {
-	color: white;
+	background-color: white;
 }
 
 button {
@@ -355,15 +353,45 @@ label {
 
 div {
 	display: block;
-	padding-top: 10px;
-	margin: 0;
 }
 
 .background {
-	background-image: url("../img/background.jpg");
-	background-size: cover;
-	background-color: grey;
-	width: 100%;
+	/*background-image: url("../img/background.jpg");*/
+	/*background-size: cover;*/
+	/*background-color: grey;*/
+	/*width: 100%;*/
+}
+
+.submenu {
+	position: sticky;
+	display: inline-table;
+	width: 20%;
+	top: 0;
+}
+
+.submenu ul li {
+	list-style-type: none;
+	padding: 3%;
+	border-bottom: 1px solid grey;
+}
+
+.submenu ul {
+	padding-left: 3%;
+}
+
+.content {
+	word-wrap: break-word;
+	background-color: rgb(255, 255, 255);
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: inline-grid;
+	width: 78%;
+}
+
+.nightmode {
+	background-color: rgb(50, 50, 50);
+	color: grey;
 }
 
 .menu, .toggler-menu {
@@ -379,21 +407,19 @@ div {
 	padding: 0;
 }
 
+.justify {
+	text-align: justify;
+}
+
 .center {
-	padding: 0;
-	margin: 0;
 	text-align: center;
 }
 
 .left {
-	padding: 0;
-	margin: 0;
 	text-align: left;
 }
 
 .right {
-	padding: 0;
-	margin: 0;
 	text-align: right;
 }
 
@@ -407,6 +433,10 @@ div {
 
 .absolute-position {
 	position: absolute !important;
+}
+
+.sticky-position {
+	position: sticky !important;
 }
 
 .fix-position {
@@ -427,6 +457,10 @@ div {
 
 .toggler-menu {
 	display: none;
+}
+
+#footer {
+	padding: 1%;
 }
 
 @media screen and (min-width: 720px) {
@@ -457,9 +491,11 @@ div {
 		display: inline-block;
 		border-bottom-right-radius: 10px;
 		border: 2px solid;
+		background-color: white;
 	}
 
 	.menu ul li:hover {
+		background: grey;
 		border-color: white;
 	}
 	
@@ -467,7 +503,13 @@ div {
 		padding: 20px;
 		text-decoration: none;
 		display: block;
+		color: black;
 	}
+
+	.menu ul li a:hover {
+		color: white;
+	}
+
 }
 
 @media screen and (max-width: 720px) {
@@ -476,14 +518,15 @@ div {
 		display: block;
 		cursor: pointer;
 		padding: 10px;
-		margin: 0px;
-		background-color: rgb(25,25,25);
+		/*background-color: rgb(25,25,25);*/
+		/*border: 1px solid grey;*/
+		width: 10%;
 	}
 
 	.toggler-menu div {
 		height: 1px; 
 		width: 25px; 
-		margin: 5px; 
+		margin: 5px 0;
 		padding: 0; 
 		background-color: rgb(255,255,255);
 	}
@@ -491,7 +534,7 @@ div {
 	.menu {
 		text-align: center;
 		display: none;
-		transition: 0.5s;
+		/*transition: 0.5s;*/
 	}
 
 	.menu ul li {
@@ -514,7 +557,16 @@ div {
 		padding: 5%;
 	}
 
+	.submenu {
+		display: none;
+	}
+
 	.active {
 		display: block;
+	}
+
+	.content {
+		padding-left: 1%;
+		padding-right: 1%;
 	}
 }

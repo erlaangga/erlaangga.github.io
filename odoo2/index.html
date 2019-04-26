@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Erlangga Indra Permana</title>
+	<link rel="stylesheet" type="text/css" href="/css/simple.css">
+	<script type="text/javascript" src="/js/simple.js"></script>
+	<script type="text/javascript">
+		"use strict";
+		var xhttp = new XMLHttpRequest();
+		var contents;
+		xhttp.onreadystatechange = function(){
+			if (this.status == 200 && this.readyState == 4) {
+				contents = JSON.parse(this.responseText);
+				var submenu_ul = submenu.children[0];
+				var i;
+				for (i in contents.id){
+					console.log(i)
+					var li = document.createElement("li");
+					var a = document.createElement("a");
+					a.href = "#"+i;
+					a.innerText = i;
+					a.style.color = "black";
+					li.append(a);
+					submenu_ul.append(li);
+					var section = document.createElement("section");
+					section.id = i;
+					articles.append(section);
+					var i2;
+					for (i2 in contents.id[i]){
+						var article = document.createElement("article");
+						var article_title = document.createElement("h1");
+						var div_content = document.createElement("div");
+						var p_content = document.createElement("p");
+						article_title.innerText = contents.id[i][i2].title
+						p_content.innerHTML = contents.id[i][i2].content;
+						div_content.append(p_content);
+						article.append(article_title);
+						article.append(div_content);
+						section.append(article)
+					}
+				}
+			}
+		}
+		xhttp.open("get", "/odoo2/data/articles.json")
+		xhttp.send()
+	</script>
+</head>
+<body class="sliding-top background">
+	<header>
+		<div class="full-width background-black">
+			<span id="toggler-menu" class="toggler-menu">
+				<div></div>
+				<div></div>
+				<div></div>
+			</span>
+		</div>
+		<nav class="menu right" id="menu">
+			<ul>
+				<li><a class="bold" href="/">Home</a></li>
+				<li><a class="bold" href="/odoo">Odoo</a></li>
+				<li><a class="bold" href="/about">About</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="full-width relative-position">
+		<div class="submenu" id="submenu">
+			<ul>
+			</ul>
+		</div>
+		<div class="content" id="articles" >
+		</div>
+	</div>
+	<footer class="bottom-left" id="footer">
+		<div>Developed by <a class="black" href="">Erlangga</a> - &copy;2019</div>
+	</footer>
+</body>
+</html>
